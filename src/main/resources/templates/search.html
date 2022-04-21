@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>商品情報検索</title>
+	<link href="/css/list.css" rel="stylesheet">
+	</link>
+	<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+	<meta charset="utf-8" />
+</head>
+
+<body class="center">
+	<div class="item-wrapper">
+		<h1><span>商品情報検索</span></h1>
+		<form th:action="@{/id-search}" th:object="${itemSearchRequest}" th:method="post">
+			<div>
+				ID：<input type="text" name="id" size="40" />
+			</div>
+			<br />
+			<div>
+				<input class="search-btn" type="submit" value="検索" />
+			</div>
+			<br />
+		</form>
+	</div>
+</body>
+
+</html>

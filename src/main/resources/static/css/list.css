@@ -1,0 +1,91 @@
+body {
+  margin: 60px auto 0;
+  width: 80%;
+  background-color: #1A405F;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.item-wrapper {
+  padding: 80px 40px;
+  background-color: #FCFCFA;
+  border-radius: 20px;
+}
+
+h1 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 40px;
+  padding: 50px　0 30px 0;
+  font-size: 26px;
+  font-weight: 300;
+  z-index: 2;
+}
+
+h1 span {
+  position: relative;
+  z-index: 2;
+}
+
+h1::before {
+  content: "Accessory";
+  position: absolute;
+  bottom: 0;
+  left: -15px;
+  transform: rotate(-10deg);
+  font-family: 'Allura', cursive;
+  font-size: 48px;
+  font-weight: 400;
+  font-family: luxus-brut, cursive;
+  font-style: italic;
+  color: #FFBEBD;
+  opacity: 0.8;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+table th, table td {
+  padding: 6px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  width: 30%;
+  background-color: #F2F2F2;
+}
+
+table td {
+  width: 70%;
+}
+
+.center {
+  text-align: center;
+}
+
+.back-btn {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 10px 0;
+  color: #FFF;
+  background-color: #337BAE;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.search-btn {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #FFF;
+  background-color: #337BAE;
+  text-decoration: none;
+  border: 0;
+  border-radius: 30px;
+}
