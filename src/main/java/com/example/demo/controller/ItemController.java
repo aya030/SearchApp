@@ -5,7 +5,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import com.example.demo.dto.ItemSearchRequest;
 import com.example.demo.entity.Item;
@@ -22,13 +21,13 @@ public class ItemController {
 	@Autowired
 	ItemService itemService;
 
-	@GetMapping("item/search")
+	@GetMapping("items/search")
 	public String displaySearch(Model model) {
 		return "search";
 	}
 
-	@GetMapping("/item/{id}")
-	public String search(@PathVariable("id") String id,@ModelAttribute ItemSearchRequest itemSearchRequest, Model model) {
+	@GetMapping("/items")
+	public String search(@ModelAttribute ItemSearchRequest itemSearchRequest, Model model) {
 		Item item = itemService.search(itemSearchRequest);
 		model.addAttribute("item", item);
 		return "search/search-id";
