@@ -13,7 +13,7 @@
 <body class="center">
 	<div class="item-wrapper">
 		<h1><span>商品情報検索</span></h1>
-		<form th:action="@{/id-search}" th:object="${itemSearchRequest}" th:method="post">
+		<form th:action="@{/item/${'id'}}" th:object="${itemSearchRequest}" th:method="get">
 			<div>
 				ID：<input type="text" name="id" size="40" />
 			</div>
