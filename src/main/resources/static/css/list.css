@@ -31,12 +31,10 @@ h1::before {
   position: absolute;
   bottom: 0;
   left: -15px;
-  transform: rotate(-10deg);
   font-family: 'Allura', cursive;
   font-size: 48px;
   font-weight: 400;
   font-family: luxus-brut, cursive;
-  font-style: italic;
   color: #FFBEBD;
   opacity: 0.8;
 }
